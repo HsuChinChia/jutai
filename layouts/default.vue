@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Menu, X, Phone, Mail, MapPin, Facebook, Linkedin, Code } from 'lucide-vue-next'
+import { Menu, X, Phone, Mail, MapPin, Facebook, Linkedin, Code, ArrowRight } from 'lucide-vue-next'
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 

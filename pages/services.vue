@@ -1,61 +1,72 @@
 <script setup lang="ts">
-import { ArrowRight, Drill, ShieldAlert, Sparkles, Building2, Beaker, HardHat, CheckSquare, Layers } from 'lucide-vue-next'
+import { 
+  ArrowRight, 
+  Layers, 
+  Zap, 
+  Shield, 
+  Droplets, 
+  Sparkles, 
+  Hammer, 
+  CheckSquare 
+} from 'lucide-vue-next'
 
 const services = [
   {
     id: 1,
-    title: 'EPOXY 無塵地坪',
-    description: '適用於高科技無塵室、生技藥廠與精密電子廠。具備極佳的耐磨耗性、不起塵、易清潔，且能有效防堵靜電破壞。',
-    icon: Sparkles,
-    specs: ['Class 100~100K', '抗靜電 10^4~10^6 Ω', '耐重壓 500kg/cm²'],
-    features: ['無縫平滑表面', '高分子接著抗剝離', '抗微汙染析出']
+    title: 'EPOXY 無塵地板',
+    description: '專為高度潔淨環境設計。表面平整無縫，耐磨損易清潔，適用於電子廠、食品廠及醫療空間。',
+    icon: Layers,
+    features: ['無縫一體成型', '不起塵易清潔', '耐磨耗抗衝擊']
   },
   {
     id: 2,
-    title: '耐酸鹼 FRP 地坪防護',
-    description: '專為高腐蝕性環境設計，如化學工廠、電鍍廠、實驗室等。強韌玻璃纖維層能有效阻絕強酸鹼侵蝕混凝土地基。',
-    icon: Beaker,
-    specs: ['高耐腐蝕等級', '抗熱衝擊防裂', '防漏止水處理'],
-    features: ['三層 FRP 結構補強', '耐 98% 硫酸侵蝕', '乙烯基高抗切變']
+    title: '導電/抗靜電地坪',
+    description: '有效消除靜電累積，保護精密電子設備。符合國際 ESD 標準，高科技產業的首選防護。',
+    icon: Zap,
+    features: ['穩定導電值', '防止靜電火花', '符合國際標準']
   },
   {
     id: 3,
-    title: '重載 U-MORTAR 砂漿',
-    description: '針對堆高機頻繁輾壓、重型機械作業區設計。高強度環氧樹脂砂漿提供極高的抗衝擊性與耐磨損壽命。',
-    icon: Building2,
-    specs: ['重載荷抗壓', '耐磨耗率極低', '高平整度控制'],
-    features: ['厚度 3mm~10mm', '抗金屬切削液', '吸收震動防裂']
+    title: '耐酸鹼 FRP 地板',
+    description: '玻璃纖維強化塑膠積層工法，具備極佳耐化學腐蝕特性，專攻化學槽與高腐蝕環境。',
+    icon: Shield,
+    features: ['優異耐酸鹼', '高機械強度', '完全防水防漏']
   },
   {
     id: 4,
-    title: 'PU 頂樓防水工程',
-    description: '提供極佳的伸長率與耐候性。適用於商業大樓頂樓、露台、中庭等防水工程，能有效適應建築物的熱脹冷縮。',
-    icon: Layers,
-    specs: ['超強抗拉伸率', '優異耐候抗 UV', '無縫防水層'],
-    features: ['彈性體防水材', '底中面三道漆膜', '壽命長達 10 年']
+    title: 'PU 防水工程',
+    description: '針對廠房頂樓、外牆的專業防水處理。高彈性延展特性，有效抵抗建築物熱脹冷縮。',
+    icon: Droplets,
+    features: ['高彈性抗裂', '耐候抗紫外線', '隔絕水氣滲透']
   },
   {
     id: 5,
-    title: '止滑車道地坪',
-    description: '專為地下停車場、物流轉運站、車道坡道設計。提供優異的輪胎抓地力，減少打滑風險，並能規劃動線標線。',
-    icon: HardHat,
-    specs: ['矽砂止滑係數高', '輪胎摩擦無異音', '色彩分區警示'],
-    features: ['降低行車噪音', '抗油汙易清洗', '耐車輛頻繁輾壓']
+    title: '外牆防汙保護系統',
+    description: '為建築外層提供透明工程保護膜，防止重工業汙垢附著，兼具優異的防水與透氣機能。',
+    icon: Sparkles,
+    features: ['防汙強自潔', '微孔結構透氣', '抗UV不黃變']
   },
   {
     id: 6,
-    title: '建築外牆防汙保護',
-    description: '採用特殊防護塗層，能有效對抗酸雨侵蝕與空氣汙染物附著。使建築外觀長保如新，降低後續清潔維護成本。',
-    icon: ShieldAlert,
-    specs: ['奈米級防汙抗垢', '極佳耐候抗黃變', '高透氣不鼓起'],
-    features: ['自潔效應', '防護漆膜壽命長', '保護底材免於風化']
+    title: 'U-MORTAR 高強度地坪',
+    description: '專為重載機具區設計的粗獷樹脂砂漿地坪，極高抗壓強度，適合堆高機頻繁輾壓的倉儲區。',
+    icon: Hammer,
+    features: ['超高抗壓強度', '耐重壓耐磨損', '重工業級止滑']
   }
+]
+
+const workflows = [
+  { step: '01', title: '現場勘估', desc: '專業技師實地丈量與濕度/基面檢測。' },
+  { step: '02', title: '圖面/材料規劃', desc: '選定最符合業界規範的工業級塗料與工法。' },
+  { step: '03', title: '素地研磨', desc: '採用重裝鑽石研磨機具進行基底刨除整平。' },
+  { step: '04', title: '多層次施工', desc: '底中面漆嚴謹工序，無縫鏝塗硬化成型。' },
+  { step: '05', title: '品質測實驗收', desc: '厚度、平整度與導電測試達標後正式交付。' }
 ]
 </script>
 
 <template>
   <NuxtLayout>
-    <!-- Industrial Hero Section -->
+    <!-- Hero Section -->
     <section class="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden bg-slate-900 border-b-2 border-slate-800">
       <div class="absolute inset-0 z-0">
         <img 
@@ -86,66 +97,100 @@ const services = [
       </div>
     </section>
 
-    <!-- Services Grid Blueprint Style -->
-    <section class="py-24 bg-slate-50 min-h-screen">
+    <!-- Services Grid -->
+    <section class="py-24 bg-slate-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border border-slate-200 bg-white shadow-sm">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
           <div 
             v-for="(service, index) in services" 
-            :key="service.id"
-            class="group p-8 border-b md:border-b-0 lg:border-b lg:[&:nth-last-child(-n+3)]:border-b-0 border-slate-200 hover:bg-slate-50 transition-colors duration-300 relative overflow-hidden flex flex-col"
-            :class="{'md:border-r': (index + 1) % 2 !== 0, 'lg:border-r': (index + 1) % 3 !== 0}"
+            :key="index"
+            class="bg-white p-10 lg:p-12 border border-slate-200 rounded-sm shadow-sm hover:shadow-xl hover:border-slate-300 transition-all duration-300 group flex flex-col h-full relative overflow-hidden"
           >
             <!-- Decorative Blueprint Corners -->
             <div class="absolute top-0 right-0 w-12 h-12 bg-[linear-gradient(45deg,transparent_49%,#e2e8f0_50%,transparent_51%)] bg-[size:8px_8px] opacity-0 group-hover:opacity-100 transition-opacity" />
-            
-            <div class="flex justify-between items-start mb-8 z-10 relative">
-              <div class="w-14 h-14 bg-slate-100 flex items-center justify-center rounded-sm border border-slate-200 group-hover:bg-blue-600 group-hover:border-blue-600 transition-colors duration-300">
-                <component :is="service.icon" class="w-7 h-7 text-slate-700 group-hover:text-white transition-colors" />
-              </div>
-              <span class="text-slate-400 font-mono text-[10px] font-bold tracking-widest border border-slate-200 px-2 py-1 rounded-sm bg-white">ID: 0{{ index + 1 }}</span>
+
+            <!-- Hexagon Icon -->
+            <div class="mb-8 inline-flex items-center justify-center w-16 h-16 bg-slate-100 border border-slate-200 text-slate-700 group-hover:bg-blue-600 group-hover:border-blue-600 group-hover:text-white transition-colors duration-300 relative z-10" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);">
+              <component :is="service.icon" class="w-7 h-7" />
             </div>
-            
-            <h3 class="text-2xl font-extrabold text-slate-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors z-10 relative">
+
+            <h3 class="text-xl font-extrabold text-slate-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors relative z-10">
               {{ service.title }}
             </h3>
             
-            <p class="text-slate-600 text-sm leading-relaxed mb-6 font-light z-10 relative flex-1">
+            <p class="text-slate-600 text-[13px] leading-relaxed mb-8 flex-1 relative z-10">
               {{ service.description }}
             </p>
-            
-            <div class="mt-auto space-y-4 pt-6 border-t border-slate-100 z-10 relative">
-              <div>
-                <strong class="text-[10px] uppercase tracking-widest text-slate-400 font-mono mb-2 block">Technical Specs_</strong>
-                <ul class="space-y-1">
-                  <li v-for="spec in service.specs" :key="spec" class="text-xs font-bold text-slate-700 flex items-center gap-2">
-                    <div class="w-1 h-1 bg-blue-600 rounded-full" /> {{ spec }}
-                  </li>
-                </ul>
-              </div>
+
+            <ul class="space-y-3 mb-10 relative z-10">
+              <li v-for="feat in service.features" :key="feat" class="flex items-center gap-3 text-[13px] text-slate-600 font-bold">
+                <div class="w-1.5 h-1.5 bg-blue-600 rounded-sm shadow-sm" /> {{ feat }}
+              </li>
+            </ul>
+
+            <NuxtLink :to="`/services/${service.id}`" class="mt-auto inline-flex items-center gap-2 text-[12px] font-bold text-blue-600 tracking-widest uppercase hover:text-blue-800 transition-colors relative z-10">
+              詳細規格 <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </NuxtLink>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section class="py-24 bg-slate-950 text-center relative overflow-hidden">
+      <!-- Stronger Grid Background -->
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b80_1px,transparent_1px),linear-gradient(to_bottom,#1e293b80_1px,transparent_1px)] bg-[size:32px_32px]" />
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="mb-16">
+          <div class="text-blue-500 font-mono tracking-[0.2em] text-[10px] font-bold uppercase mb-4">Standard Workflow</div>
+          <h2 class="text-3xl font-extrabold text-white tracking-tight">嚴謹的標準化施工作業</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div 
+            v-for="flow in workflows" 
+            :key="flow.step"
+            class="group bg-slate-900 border border-transparent hover:border-blue-600/50 p-8 transition-all duration-300 relative flex flex-col items-center"
+          >
+            <!-- Highlight Box connected to border -->
+            <div class="inline-flex w-[70px] h-[70px] items-center justify-center border border-slate-700 bg-transparent group-hover:bg-blue-600 group-hover:border-blue-500 font-mono text-xl text-white font-bold mb-8 transition-colors duration-300 absolute -top-8 left-1/2 -translate-x-1/2">
+              {{ flow.step }}
             </div>
             
-            <button class="mt-8 w-full py-3 bg-white text-slate-700 hover:bg-slate-900 hover:text-white transition-colors text-[12px] font-bold uppercase tracking-widest border border-slate-200 hover:border-slate-900 rounded-sm focus:outline-none flex items-center justify-center gap-2 z-10 relative">
-              詳細規格 <ArrowRight :size="14" />
-            </button>
+            <div class="pt-6 w-full mt-4">
+              <h4 class="text-white font-bold mb-4 text-sm whitespace-nowrap overflow-hidden text-ellipsis">{{ flow.title }}</h4>
+              <p class="text-slate-400 text-[12px] leading-relaxed font-light text-center">
+                {{ flow.desc }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Bottom CTA -->
+    <section class="py-24  relative border-t-4 border-blue-600">
+      <div class="absolute inset-0  bg-[size:40px_40px]" />
+      <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-extrabold  mb-6 tracking-tight">需要專業的地坪工程建議嗎？</h2>
+        <p class="text-slate-400 text-sm max-w-2xl mx-auto leading-relaxed mb-10">
+          我們的工程團隊隨時準備為您提供免費的勘查評估，精準計算用料與排程，提供最具經濟效益的工業解決方案。
+        </p>
+        <NuxtLink 
+          to="/contact" 
+          class="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-3.5 text-sm font-bold tracking-wider hover:bg-slate-800 border border-transparent hover:border-blue-600 hover:text-blue-400 transition-colors rounded-sm shadow-lg shadow-blue-600/20"
+        >
+          聯絡工程部 <ArrowRight class="w-4 h-4" />
+        </NuxtLink>
+      </div>
+    </section>
+
   </NuxtLayout>
 </template>
 
 <style scoped>
-.animate-fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* Optional: any specific scoped animations if needed */
 </style>

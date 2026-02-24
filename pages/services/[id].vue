@@ -193,7 +193,7 @@ const service = servicesDb[serviceId]
       </div>
 
       <!-- Hero Section -->
-      <section class="bg-slate-900 pt-16 pb-24 border-b-4 border-blue-600 relative overflow-hidden">
+      <section class="bg-slate-900 pt-16 pb-24 border-b-4 border-yellow-600 relative overflow-hidden">
         <div class="absolute inset-0 z-0">
           <img 
             :src="service.heroImage" 
@@ -207,11 +207,11 @@ const service = servicesDb[serviceId]
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center gap-4 mb-6">
-            <div class="w-16 h-16 bg-blue-600 rounded-sm flex items-center justify-center border border-blue-500 shadow-xl">
+            <div class="w-16 h-16 bg-yellow-600 rounded-sm flex items-center justify-center border border-yellow-500 shadow-xl">
               <component :is="service.icon" class="w-8 h-8 text-white" />
             </div>
             <div>
-              <span class="text-blue-500 font-mono uppercase tracking-[0.2em] text-sm font-bold flex items-center gap-2">
+              <span class="text-yellow-500 font-mono uppercase tracking-[0.2em] text-sm font-bold flex items-center gap-2">
                 Tech Spec <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded-sm">ID: 0{{ serviceId }}</span>
               </span>
             </div>
@@ -219,7 +219,7 @@ const service = servicesDb[serviceId]
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight max-w-4xl">
             {{ service.title }}
           </h1>
-          <p class="text-xl text-slate-300 font-light border-l-2 border-blue-500 pl-4 max-w-2xl leading-relaxed">
+          <p class="text-xl text-slate-300 font-light border-l-2 border-yellow-500 pl-4 max-w-2xl leading-relaxed">
             {{ service.subtitle }}
           </p>
         </div>
@@ -236,7 +236,7 @@ const service = servicesDb[serviceId]
               <!-- System Overview -->
               <div>
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                  <div class="w-2 h-6 bg-blue-600" />系統概述
+                  <div class="w-2 h-6 bg-yellow-600" />系統概述
                 </h2>
                 <p class="text-slate-600 leading-relaxed text-lg">
                   {{ service.overview }}
@@ -246,13 +246,13 @@ const service = servicesDb[serviceId]
               <!-- Application Process -->
               <div>
                 <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
-                  <div class="w-2 h-6 bg-blue-600" />標準施工剖面與流程
+                  <div class="w-2 h-6 bg-yellow-600" />標準施工剖面與流程
                 </h2>
                 <div class="space-y-6">
                   <div 
                     v-for="(step, index) in service.process" 
                     :key="index"
-                    class="bg-white border border-slate-200 p-6 rounded-sm shadow-sm flex flex-col sm:flex-row gap-6 hover:border-blue-300 transition-colors"
+                    class="bg-white border border-slate-200 p-6 rounded-sm shadow-sm flex flex-col sm:flex-row gap-6 hover:border-yellow-300 transition-colors"
                   >
                     <div class="flex-shrink-0">
                       <div class="text-4xl font-mono font-bold text-slate-200 tracking-tighter">{{ step.step }}</div>
@@ -268,11 +268,11 @@ const service = servicesDb[serviceId]
               <!-- Advantages -->
               <div>
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                  <div class="w-2 h-6 bg-blue-600" />工程優勢
+                  <div class="w-2 h-6 bg-yellow-600" />工程優勢
                 </h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div v-for="feat in service.features" :key="feat" class="bg-white border border-slate-200 p-4 rounded-sm flex items-start gap-3">
-                    <CheckCircle2 :size="20" class="text-blue-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 :size="20" class="text-yellow-600 flex-shrink-0 mt-0.5" />
                     <span class="text-slate-700 text-sm font-medium">{{ feat }}</span>
                   </div>
                 </div>
@@ -287,7 +287,7 @@ const service = servicesDb[serviceId]
                 <div class="bg-slate-900 rounded-sm border border-slate-800 shadow-xl overflow-hidden">
                   <div class="bg-slate-950 px-6 py-4 border-b border-slate-800 flex justify-between items-center">
                     <h3 class="text-white font-bold tracking-widest uppercase text-sm flex items-center gap-2">
-                      <Factory :size="16" class="text-blue-500" /> 系統技術參數
+                      <Factory :size="16" class="text-yellow-500" /> 系統技術參數
                     </h3>
                   </div>
                   <div class="p-6">
@@ -317,10 +317,10 @@ const service = servicesDb[serviceId]
                 </div>
 
                 <!-- CTA -->
-                <div class="bg-blue-600 rounded-sm p-6 text-white text-center shadow-lg shadow-blue-900/20">
+                <div class="bg-yellow-600 rounded-sm p-6 text-white text-center shadow-lg shadow-yellow-900/20">
                   <h3 class="font-bold text-lg mb-2">需要這項工程服務？</h3>
-                  <p class="text-blue-100 text-xs mb-6">我們的工程師將為您的廠房環境進行現場評估，並提供最適合的施作計畫與報價。</p>
-                  <NuxtLink to="/contact" class="block w-full bg-white text-blue-600 font-bold py-3 text-sm rounded-sm hover:bg-slate-900 hover:text-white transition-colors">
+                  <p class="text-yellow-100 text-xs mb-6">我們的工程師將為您的廠房環境進行現場評估，並提供最適合的施作計畫與報價。</p>
+                  <NuxtLink to="/contact" class="block w-full bg-white text-yellow-600 font-bold py-3 text-sm rounded-sm hover:bg-slate-900 hover:text-white transition-colors">
                     立即聯絡勘估
                   </NuxtLink>
                 </div>
@@ -339,7 +339,7 @@ const service = servicesDb[serviceId]
       <div class="text-center">
         <h2 class="text-4xl font-bold text-slate-900 mb-4">服務項目不存在</h2>
         <p class="text-slate-600 mb-8">您尋找的工程系統規格可能已經下架或網址錯誤。</p>
-        <NuxtLink to="/services" class="bg-blue-600 text-white px-6 py-3 rounded-sm font-bold hover:bg-slate-900 transition-colors">
+        <NuxtLink to="/services" class="bg-yellow-600 text-white px-6 py-3 rounded-sm font-bold hover:bg-slate-900 transition-colors">
           返回全方位解決方案
         </NuxtLink>
       </div>

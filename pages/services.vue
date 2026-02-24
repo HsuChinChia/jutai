@@ -84,8 +84,8 @@ const workflows = [
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-10">
         <div class="max-w-3xl animate-fade-in-up">
           <div class="flex items-center gap-4 mb-4">
-            <div class="h-1 w-12 bg-blue-600" />
-            <span class="text-blue-500 font-mono uppercase tracking-[0.2em] text-sm font-bold">Solutions</span>
+            <div class="h-1 w-12 bg-yellow-600" />
+            <span class="text-yellow-500 font-mono uppercase tracking-[0.2em] text-sm font-bold">Solutions</span>
           </div>
           <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
             全方位解決方案
@@ -111,11 +111,11 @@ const workflows = [
             <div class="absolute top-0 right-0 w-12 h-12 bg-[linear-gradient(45deg,transparent_49%,#e2e8f0_50%,transparent_51%)] bg-[size:8px_8px] opacity-0 group-hover:opacity-100 transition-opacity" />
 
             <!-- Hexagon Icon -->
-            <div class="mb-8 inline-flex items-center justify-center w-16 h-16 bg-slate-100 border border-slate-200 text-slate-700 group-hover:bg-blue-600 group-hover:border-blue-600 group-hover:text-white transition-colors duration-300 relative z-10" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);">
+            <div class="mb-8 inline-flex items-center justify-center w-16 h-16 bg-slate-100 border border-slate-200 text-slate-700 group-hover:bg-yellow-600 group-hover:border-yellow-600 group-hover:text-white transition-colors duration-300 relative z-10" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);">
               <component :is="service.icon" class="w-7 h-7" />
             </div>
 
-            <h3 class="text-xl font-extrabold text-slate-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors relative z-10">
+            <h3 class="text-xl font-extrabold text-slate-900 mb-4 tracking-tight group-hover:text-yellow-600 transition-colors relative z-10">
               {{ service.title }}
             </h3>
             
@@ -125,11 +125,11 @@ const workflows = [
 
             <ul class="space-y-3 mb-10 relative z-10">
               <li v-for="feat in service.features" :key="feat" class="flex items-center gap-3 text-[13px] text-slate-600 font-bold">
-                <div class="w-1.5 h-1.5 bg-blue-600 rounded-sm shadow-sm" /> {{ feat }}
+                <div class="w-1.5 h-1.5 bg-yellow-600 rounded-sm shadow-sm" /> {{ feat }}
               </li>
             </ul>
 
-            <NuxtLink :to="`/services/${service.id}`" class="mt-auto inline-flex items-center gap-2 text-[12px] font-bold text-blue-600 tracking-widest uppercase hover:text-blue-800 transition-colors relative z-10">
+            <NuxtLink :to="`/services/${service.id}`" class="mt-auto inline-flex items-center gap-2 text-[12px] font-bold text-yellow-600 tracking-widest uppercase hover:text-yellow-800 transition-colors relative z-10">
               詳細規格 <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </NuxtLink>
           </div>
@@ -145,7 +145,7 @@ const workflows = [
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="mb-16">
-          <div class="text-blue-500 font-mono tracking-[0.2em] text-[10px] font-bold uppercase mb-4">Standard Workflow</div>
+          <div class="text-yellow-500 font-mono tracking-[0.2em] text-[10px] font-bold uppercase mb-4">Standard Workflow</div>
           <h2 class="text-3xl font-extrabold text-white tracking-tight">嚴謹的標準化施工作業</h2>
         </div>
 
@@ -153,10 +153,10 @@ const workflows = [
           <div 
             v-for="flow in workflows" 
             :key="flow.step"
-            class="group bg-slate-900 border border-transparent hover:border-blue-600/50 p-8 transition-all duration-300 relative flex flex-col items-center"
+            class="group bg-slate-900 border border-transparent hover:border-yellow-600/50 p-8 transition-all duration-300 relative flex flex-col items-center"
           >
             <!-- Highlight Box connected to border -->
-            <div class="inline-flex w-[70px] h-[70px] items-center justify-center border border-slate-700 bg-transparent group-hover:bg-blue-600 group-hover:border-blue-500 font-mono text-xl text-white font-bold mb-8 transition-colors duration-300 absolute -top-8 left-1/2 -translate-x-1/2">
+            <div class="inline-flex w-[70px] h-[70px] items-center justify-center border border-slate-700 bg-transparent group-hover:bg-yellow-600 group-hover:border-yellow-500 font-mono text-xl text-white font-bold mb-8 transition-colors duration-300 absolute -top-8 left-1/2 -translate-x-1/2">
               {{ flow.step }}
             </div>
             
@@ -172,7 +172,7 @@ const workflows = [
     </section>
 
     <!-- Bottom CTA -->
-    <section class="py-24  relative border-t-4 border-blue-600">
+    <section class="py-24  relative border-t-4 border-yellow-600">
       <div class="absolute inset-0  bg-[size:40px_40px]" />
       <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <h2 class="text-3xl font-extrabold  mb-6 tracking-tight">需要專業的地坪工程建議嗎？</h2>

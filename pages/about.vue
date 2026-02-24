@@ -20,7 +20,7 @@ import { CheckCircle, Shield, Zap, Layers, Award, Users, ArrowRight } from 'luci
         <div class="animate-fade-in-up">
           <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
             建立堅實基礎 <br />
-            <span class="text-blue-500">自民國82年起</span>
+            <span class="text-yellow-500">自民國82年起</span>
           </h1>
           <p class="text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
             專業 EPOXY 地坪解決方案，專為耐用性、精確性和高性能而設計。
@@ -35,8 +35,8 @@ import { CheckCircle, Shield, Zap, Layers, Award, Users, ArrowRight } from 'luci
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div class="animate-fade-in-right">
             <div class="flex items-center gap-4 mb-6">
-              <div class="h-1 w-12 bg-blue-600 rounded-full" />
-              <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">關於俊泰</span>
+              <div class="h-1 w-12 bg-yellow-600 rounded-full" />
+              <span class="text-yellow-600 font-bold uppercase tracking-widest text-sm">關於俊泰</span>
             </div>
             <h2 class="text-4xl font-bold text-slate-900 mb-8 leading-tight">
               開創工業地坪 <br />
@@ -55,19 +55,19 @@ import { CheckCircle, Shield, Zap, Layers, Award, Users, ArrowRight } from 'luci
             </div>
             
             <div class="mt-10 grid grid-cols-2 gap-8">
-              <div class="border-l-4 border-blue-100 pl-6">
-                <div class="text-4xl font-bold text-blue-600 mb-1">30+</div>
+              <div class="border-l-4 border-yellow-100 pl-6">
+                <div class="text-4xl font-bold text-yellow-600 mb-1">30+</div>
                 <div class="text-sm text-slate-500 font-medium uppercase tracking-wide">年專業經驗</div>
               </div>
-              <div class="border-l-4 border-blue-100 pl-6">
-                <div class="text-4xl font-bold text-blue-600 mb-1">100%</div>
+              <div class="border-l-4 border-yellow-100 pl-6">
+                <div class="text-4xl font-bold text-yellow-600 mb-1">100%</div>
                 <div class="text-sm text-slate-500 font-medium uppercase tracking-wide">品質承諾</div>
               </div>
             </div>
           </div>
 
           <div class="relative animate-fade-in-scale">
-            <div class="absolute -inset-4 bg-blue-600/5 rounded-2xl transform rotate-3" />
+            <div class="absolute -inset-4 bg-yellow-600/5 rounded-2xl transform rotate-3" />
             <img 
               src="https://picsum.photos/seed/construction/800/1000" 
               alt="Construction Site" 
@@ -76,7 +76,7 @@ import { CheckCircle, Shield, Zap, Layers, Award, Users, ArrowRight } from 'luci
             />
             <div class="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur p-6 rounded-lg shadow-lg border border-slate-100">
               <div class="flex items-start gap-4">
-                <div class="bg-blue-600 p-3 rounded-full text-white">
+                <div class="bg-yellow-600 p-3 rounded-full text-white">
                   <Award :size="24" />
                 </div>
                 <div>
@@ -123,8 +123,8 @@ import { CheckCircle, Shield, Zap, Layers, Award, Users, ArrowRight } from 'luci
             class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 animate-fade-in-up"
             :style="{ animationDelay: `${index * 200}ms` }"
           >
-            <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
-              <component :is="item.icon" class="w-8 h-8 text-blue-600" />
+            <div class="w-14 h-14 bg-yellow-50 rounded-xl flex items-center justify-center mb-6">
+              <component :is="item.icon" class="w-8 h-8 text-yellow-600" />
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-3">{{ item.title }}</h3>
             <p class="text-slate-600 leading-relaxed text-sm">
@@ -141,8 +141,8 @@ import { CheckCircle, Shield, Zap, Layers, Award, Users, ArrowRight } from 'luci
         <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>
             <div class="flex items-center gap-4 mb-4">
-              <div class="h-1 w-12 bg-blue-500 rounded-full" />
-              <span class="text-blue-400 font-bold uppercase tracking-widest text-sm">服務項目</span>
+              <div class="h-1 w-12 bg-yellow-500 rounded-full" />
+              <span class="text-yellow-400 font-bold uppercase tracking-widest text-sm">服務項目</span>
             </div>
             <h2 class="text-4xl font-bold text-white">全方位解決方案</h2>
           </div>
@@ -168,14 +168,14 @@ import { CheckCircle, Shield, Zap, Layers, Award, Users, ArrowRight } from 'luci
             class="bg-slate-900 p-10 hover:bg-slate-800 transition-colors group cursor-pointer"
           >
             <div class="flex justify-between items-start mb-8">
-              <Layers class="text-slate-600 group-hover:text-blue-400 transition-colors" :size="32" />
+              <Layers class="text-slate-600 group-hover:text-yellow-400 transition-colors" :size="32" />
               <span class="text-slate-700 font-mono text-sm">0{{ index + 1 }}</span>
             </div>
             <h3 class="text-xl font-bold text-slate-200 group-hover:text-white mb-2">{{ service }}</h3>
             <p class="text-slate-500 text-sm leading-relaxed mb-6">
               適用於工業和商業環境的高性能應用。
             </p>
-            <div class="flex items-center gap-2 text-blue-500 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+            <div class="flex items-center gap-2 text-yellow-500 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
               了解更多 <ArrowRight :size="14" />
             </div>
           </div>
@@ -206,7 +206,7 @@ import { CheckCircle, Shield, Zap, Layers, Award, Users, ArrowRight } from 'luci
                 :key="index"
                 class="flex items-center gap-3 text-slate-700"
               >
-                <CheckCircle :size="20" class="text-blue-500 flex-shrink-0" />
+                <CheckCircle :size="20" class="text-yellow-500 flex-shrink-0" />
                 <span>{{ item }}</span>
               </li>
             </ul>

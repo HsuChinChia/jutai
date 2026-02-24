@@ -96,8 +96,8 @@ const filteredProjects = computed(() => {
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-10">
         <div class="max-w-3xl animate-fade-in-up">
           <div class="flex items-center gap-4 mb-4">
-            <div class="h-1 w-12 bg-blue-600" />
-            <span class="text-blue-500 font-mono uppercase tracking-[0.2em] text-sm font-bold">Portfolios</span>
+            <div class="h-1 w-12 bg-yellow-600" />
+            <span class="text-yellow-500 font-mono uppercase tracking-[0.2em] text-sm font-bold">Portfolios</span>
           </div>
           <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
             工程實績藍圖
@@ -134,12 +134,12 @@ const filteredProjects = computed(() => {
             <div 
               v-for="project in filteredProjects" 
               :key="project.id"
-              class="group bg-white rounded-sm overflow-hidden border border-slate-200 flex flex-col h-full hover:border-blue-500 transition-colors shadow-sm"
+              class="group bg-white rounded-sm overflow-hidden border border-slate-200 flex flex-col h-full hover:border-yellow-500 transition-colors shadow-sm"
             >
               <!-- Category Badge (Absolute) -->
               <div class="p-4 border-b border-slate-200 bg-white flex justify-between items-center z-10 transition-colors duration-300 group-hover:bg-slate-50">
                 <span class="text-[11px] font-bold text-slate-900 uppercase tracking-widest flex items-center gap-2">
-                   <div class="w-1.5 h-1.5 bg-blue-600 rounded-full" />
+                   <div class="w-1.5 h-1.5 bg-yellow-600 rounded-full" />
                    {{ categories.find(c => c.id === project.category)?.name }}
                 </span>
                 <span class="text-[10px] text-slate-400 font-mono tracking-widest border border-slate-200 px-2 py-0.5 rounded-sm">
@@ -162,14 +162,14 @@ const filteredProjects = computed(() => {
               <div class="p-6 flex-1 flex flex-col bg-white">
                 <div class="flex items-center gap-4 text-[11px] text-slate-500 mb-4 font-mono font-bold tracking-wider">
                   <span class="flex items-center gap-1.5">
-                    <MapPin :size="12" class="text-blue-500" /> {{ project.location }}
+                    <MapPin :size="12" class="text-yellow-500" /> {{ project.location }}
                   </span>
                   <span class="flex items-center gap-1.5 border-l border-slate-300 pl-4">
-                    <Calendar :size="12" class="text-blue-500" /> {{ project.date }}
+                    <Calendar :size="12" class="text-yellow-500" /> {{ project.date }}
                   </span>
                 </div>
 
-                <h3 class="text-xl font-extrabold text-slate-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors">
+                <h3 class="text-xl font-extrabold text-slate-900 mb-4 tracking-tight group-hover:text-yellow-600 transition-colors">
                   {{ project.title }}
                 </h3>
                 
@@ -178,7 +178,7 @@ const filteredProjects = computed(() => {
                 </p>
 
                 <div class="pt-4 border-t border-slate-100 mt-auto">
-                  <button class="w-full py-3 bg-slate-50 text-slate-700 hover:bg-slate-900 hover:text-white transition-colors text-[12px] font-bold uppercase tracking-widest border border-transparent rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-1 flex items-center justify-center gap-2">
+                  <button class="w-full py-3 bg-slate-50 text-slate-700 hover:bg-slate-900 hover:text-white transition-colors text-[12px] font-bold uppercase tracking-widest border border-transparent rounded-sm focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-1 flex items-center justify-center gap-2">
                     詳細規格 <ArrowRight :size="14" />
                   </button>
                 </div>
@@ -202,7 +202,7 @@ const filteredProjects = computed(() => {
         <h2 class="text-2xl font-bold text-white mb-6">您的廠房也需要打造同樣標準的防護層嗎？</h2>
         <NuxtLink 
           to="/contact"
-          class="inline-flex items-center gap-2 bg-blue-600 text-white font-bold px-8 py-3 rounded-sm border border-transparent hover:bg-slate-900 hover:border-blue-500 transition-colors uppercase tracking-wider text-sm"
+          class="inline-flex items-center gap-2 bg-yellow-600 text-white font-bold px-8 py-3 rounded-sm border border-transparent hover:bg-slate-900 hover:border-yellow-500 transition-colors uppercase tracking-wider text-sm"
         >
           與我們聯繫
         </NuxtLink>

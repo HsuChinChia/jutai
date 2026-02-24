@@ -20,12 +20,12 @@ import { ArrowRight, Drill, ShieldAlert, Sparkles, Building2, Beaker, HardHat } 
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 mt-10 md:mt-0">
         <div class="max-w-3xl animate-fade-in-up">
           <div class="flex items-center gap-4 mb-6">
-            <div class="h-1 w-12 bg-blue-600" />
-            <span class="text-blue-500 font-mono uppercase tracking-[0.2em] text-sm font-bold">Industrial Grade Flooring</span>
+            <div class="h-1 w-12 bg-yellow-600" />
+            <span class="text-yellow-500 font-mono uppercase tracking-[0.2em] text-sm font-bold">Industrial Grade Flooring</span>
           </div>
           <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 leading-[1.1] tracking-tight">
             堅實基礎 <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">專業鑄造</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200">專業鑄造</span>
           </h1>
           <p class="text-xl text-slate-400 mb-10 max-w-xl font-light leading-relaxed border-l-2 border-slate-700 pl-6">
             自民國82年起，俊泰工程提供最高標準的 EPOXY 及 FRP 地坪系統，滿足工業重載與高科技無塵環境的嚴苛要求。
@@ -33,7 +33,7 @@ import { ArrowRight, Drill, ShieldAlert, Sparkles, Building2, Beaker, HardHat } 
           <div class="flex flex-col sm:flex-row gap-4">
             <NuxtLink 
               to="/about" 
-              class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 font-bold transition-colors flex items-center justify-center gap-3 group rounded-sm shadow-lg shadow-blue-900/20"
+              class="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-4 font-bold transition-colors flex items-center justify-center gap-3 group rounded-sm shadow-lg shadow-yellow-900/20"
             >
               了解工程實力 <ArrowRight :size="18" class="group-hover:translate-x-1 transition-transform" />
             </NuxtLink>
@@ -45,15 +45,15 @@ import { ArrowRight, Drill, ShieldAlert, Sparkles, Building2, Beaker, HardHat } 
           <!-- Quick Stats -->
           <div class="grid grid-cols-3 gap-4 sm:gap-8 mt-16 pt-8 border-t border-slate-800">
             <div>
-              <div class="text-3xl font-bold text-white mb-1">30<span class="text-blue-500">+</span></div>
+              <div class="text-3xl font-bold text-white mb-1">30<span class="text-yellow-500">+</span></div>
               <div class="text-xs text-slate-500 font-mono uppercase tracking-wider">Years Exp.</div>
             </div>
             <div>
-              <div class="text-3xl font-bold text-white mb-1">100<span class="text-blue-500">%</span></div>
+              <div class="text-3xl font-bold text-white mb-1">100<span class="text-yellow-500">%</span></div>
               <div class="text-xs text-slate-500 font-mono uppercase tracking-wider">Quality Rate</div>
             </div>
             <div>
-              <div class="text-3xl font-bold text-white mb-1">99<span class="text-blue-500">%</span></div>
+              <div class="text-3xl font-bold text-white mb-1">99<span class="text-yellow-500">%</span></div>
               <div class="text-xs text-slate-500 font-mono uppercase tracking-wider">On-time Build</div>
             </div>
           </div>
@@ -77,7 +77,7 @@ import { ArrowRight, Drill, ShieldAlert, Sparkles, Building2, Beaker, HardHat } 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-slate-200 bg-white shadow-sm">
           <div class="p-10 border-b md:border-b-0 md:border-r border-slate-200 hover:bg-slate-50 transition-colors group cursor-pointer relative overflow-hidden">
             <div class="absolute top-0 right-0 w-16 h-16 bg-[linear-gradient(45deg,transparent_49%,#e2e8f0_50%,transparent_51%)] bg-[size:8px_8px] opacity-0 group-hover:opacity-100 transition-opacity" />
-            <div class="w-12 h-12 bg-slate-100 flex items-center justify-center mb-6 rounded-sm group-hover:bg-blue-600 transition-colors">
+            <div class="w-12 h-12 bg-slate-100 flex items-center justify-center mb-6 rounded-sm group-hover:bg-yellow-600 transition-colors">
               <Building2 class="w-6 h-6 text-slate-700 group-hover:text-white transition-colors" />
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-4 tracking-tight">重載耐磨防護</h3>
@@ -88,7 +88,7 @@ import { ArrowRight, Drill, ShieldAlert, Sparkles, Building2, Beaker, HardHat } 
           
           <div class="p-10 border-b md:border-b-0 md:border-r border-slate-200 hover:bg-slate-50 transition-colors group cursor-pointer relative overflow-hidden">
             <div class="absolute top-0 right-0 w-16 h-16 bg-[linear-gradient(45deg,transparent_49%,#e2e8f0_50%,transparent_51%)] bg-[size:8px_8px] opacity-0 group-hover:opacity-100 transition-opacity" />
-            <div class="w-12 h-12 bg-slate-100 flex items-center justify-center mb-6 rounded-sm group-hover:bg-blue-600 transition-colors">
+            <div class="w-12 h-12 bg-slate-100 flex items-center justify-center mb-6 rounded-sm group-hover:bg-yellow-600 transition-colors">
               <Beaker class="w-6 h-6 text-slate-700 group-hover:text-white transition-colors" />
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-4 tracking-tight">抗酸鹼化學防腐</h3>
@@ -99,7 +99,7 @@ import { ArrowRight, Drill, ShieldAlert, Sparkles, Building2, Beaker, HardHat } 
 
           <div class="p-10 hover:bg-slate-50 transition-colors group cursor-pointer relative overflow-hidden">
             <div class="absolute top-0 right-0 w-16 h-16 bg-[linear-gradient(45deg,transparent_49%,#e2e8f0_50%,transparent_51%)] bg-[size:8px_8px] opacity-0 group-hover:opacity-100 transition-opacity" />
-            <div class="w-12 h-12 bg-slate-100 flex items-center justify-center mb-6 rounded-sm group-hover:bg-blue-600 transition-colors">
+            <div class="w-12 h-12 bg-slate-100 flex items-center justify-center mb-6 rounded-sm group-hover:bg-yellow-600 transition-colors">
               <Sparkles class="w-6 h-6 text-slate-700 group-hover:text-white transition-colors" />
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-4 tracking-tight">無塵防靜電系統</h3>
@@ -159,10 +159,10 @@ import { ArrowRight, Drill, ShieldAlert, Sparkles, Building2, Beaker, HardHat } 
             />
             
             <!-- Quality Badge -->
-            <div class="absolute -left-4 md:-left-8 top-12 bg-blue-600 text-white p-5 md:p-6 rounded-sm shadow-xl z-20 flex items-center gap-4 border border-blue-500">
+            <div class="absolute -left-4 md:-left-8 top-12 bg-yellow-600 text-white p-5 md:p-6 rounded-sm shadow-xl z-20 flex items-center gap-4 border border-yellow-500">
               <HardHat :size="32" class="opacity-90" />
               <div>
-                <div class="text-[10px] md:text-sm text-blue-200 font-mono tracking-wider">CERTIFIED</div>
+                <div class="text-[10px] md:text-sm text-yellow-200 font-mono tracking-wider">CERTIFIED</div>
                 <div class="font-bold text-sm md:text-base">專業證照技師施工</div>
               </div>
             </div>
@@ -172,7 +172,7 @@ import { ArrowRight, Drill, ShieldAlert, Sparkles, Building2, Beaker, HardHat } 
     </section>
 
     <!-- Call to Action -->
-    <section class="py-24 bg-slate-900 relative overflow-hidden border-t-4 border-blue-600">
+    <section class="py-24 bg-slate-900 relative overflow-hidden border-t-4 border-yellow-600">
       <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:40px_40px]" />
       <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
         <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">準備好升級您的廠房地坪了嗎？</h2>
@@ -181,7 +181,7 @@ import { ArrowRight, Drill, ShieldAlert, Sparkles, Building2, Beaker, HardHat } 
         </p>
         <NuxtLink 
           to="/contact" 
-          class="inline-flex bg-blue-600 text-white px-8 py-4 font-bold rounded-sm border border-transparent hover:bg-slate-900 hover:border-blue-600 hover:text-blue-400 transition-colors"
+          class="inline-flex bg-yellow-600 text-white px-8 py-4 font-bold rounded-sm border border-transparent hover:bg-slate-900 hover:border-yellow-600 hover:text-yellow-400 transition-colors"
         >
           立即預約現場測量
         </NuxtLink>

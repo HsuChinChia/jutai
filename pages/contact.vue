@@ -64,7 +64,7 @@ const handleSubmit = async () => {
 
             <div class="space-y-8">
               <div class="flex items-start gap-6 group">
-                <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 flex-shrink-0">
+                <div class="w-12 h-12 bg-yellow-50 rounded-xl flex items-center justify-center text-yellow-600 group-hover:bg-yellow-600 group-hover:text-white transition-colors duration-300 flex-shrink-0">
                   <MapPin :size="24" />
                 </div>
                 <div>
@@ -73,7 +73,7 @@ const handleSubmit = async () => {
                   <a 
                     href="https://maps.google.com/?q=高雄市前鎮區瑞祥街142號" 
                     target="_blank"
-                    class="text-sm text-blue-500 hover:text-blue-700 mt-2 inline-block"
+                    class="text-sm text-yellow-500 hover:text-yellow-700 mt-2 inline-block"
                   >
                     在 Google 地圖上查看
                   </a>
@@ -81,7 +81,7 @@ const handleSubmit = async () => {
               </div>
 
               <div class="flex items-start gap-6 group">
-                <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 flex-shrink-0">
+                <div class="w-12 h-12 bg-yellow-50 rounded-xl flex items-center justify-center text-yellow-600 group-hover:bg-yellow-600 group-hover:text-white transition-colors duration-300 flex-shrink-0">
                   <Phone :size="24" />
                 </div>
                 <div>
@@ -92,7 +92,7 @@ const handleSubmit = async () => {
               </div>
 
               <div class="flex items-start gap-6 group">
-                <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 flex-shrink-0">
+                <div class="w-12 h-12 bg-yellow-50 rounded-xl flex items-center justify-center text-yellow-600 group-hover:bg-yellow-600 group-hover:text-white transition-colors duration-300 flex-shrink-0">
                   <Mail :size="24" />
                 </div>
                 <div>
@@ -100,7 +100,7 @@ const handleSubmit = async () => {
                   <p class="text-slate-600">juntai.wu01@gmail.com</p>
                   <a 
                     href="mailto:juntai.wu01@gmail.com" 
-                    class="text-sm text-blue-500 hover:text-blue-700 mt-2 inline-block"
+                    class="text-sm text-yellow-500 hover:text-yellow-700 mt-2 inline-block"
                   >
                     寄送郵件
                   </a>
@@ -137,7 +137,7 @@ const handleSubmit = async () => {
                       type="text" 
                       id="name" 
                       required
-                      class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white"
+                      class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-all bg-white"
                       placeholder="您的稱呼"
                     />
                   </div>
@@ -148,7 +148,7 @@ const handleSubmit = async () => {
                       type="tel" 
                       id="phone" 
                       required
-                      class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white"
+                      class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-all bg-white"
                       placeholder="09xx-xxx-xxx"
                     />
                   </div>
@@ -161,7 +161,7 @@ const handleSubmit = async () => {
                     type="email" 
                     id="email" 
                     required
-                    class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white"
+                    class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-all bg-white"
                     placeholder="example@email.com"
                   />
                 </div>
@@ -171,7 +171,7 @@ const handleSubmit = async () => {
                   <select 
                     v-model="form.subject"
                     id="subject" 
-                    class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-slate-600"
+                    class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-all bg-white text-slate-600"
                   >
                     <option value="" disabled selected>請選擇諮詢項目</option>
                     <option value="quote">工程報價</option>
@@ -188,7 +188,7 @@ const handleSubmit = async () => {
                     id="message" 
                     rows="5" 
                     required
-                    class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white resize-none"
+                    class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-all bg-white resize-none"
                     placeholder="請簡述您的需求、場地狀況或預計施工面積..."
                   ></textarea>
                 </div>
@@ -196,7 +196,7 @@ const handleSubmit = async () => {
                 <button 
                   type="submit" 
                   :disabled="isSubmitting"
-                  class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-600/20 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                  class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-yellow-600/20 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   <span v-if="isSubmitting">傳送中...</span>
                   <span v-else class="flex items-center gap-2">確認送出 <Send :size="18" /></span>
@@ -215,7 +215,7 @@ const handleSubmit = async () => {
               </p>
               <button 
                 @click="isSubmitted = false; form = { name: '', email: '', phone: '', subject: '', message: '' }"
-                class="text-blue-600 font-medium hover:text-blue-800 underline"
+                class="text-yellow-600 font-medium hover:text-yellow-800 underline"
               >
                 發送另一則訊息
               </button>
